@@ -1,0 +1,93 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Sunshine</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pref_location_key">Location_key</string>
+    <string name="pref_location_tile">Location</string>
+    <string name="pref_location_default">cairo</string>
+    <string name="pref_units_key">units_key</string>
+    <string name="pref_units_title">Units</string>
+    <string name="pref_units_default">metric</string>
+    <string name="action_share">Share</string>
+    <!-- Label for Sunshine option in art pack preference [CHAR LIMIT=25] -->
+    <string name="pref_art_pack_label_sunshine">Sunshine</string>
+
+    <!-- Label for cute dogs option in art pack preference [CHAR LIMIT=25] -->
+    <string name="pref_art_pack_label_cute_dogs">Cute dogs</string>
+    <string-array name="settings_units_by_labels">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+    <string-array name="settings_units_by_values">
+        <item>metric</item>
+        <item>imperial</item>
+    </string-array>
+    <!-- Names of the art packs available -->
+    <string-array name="pref_art_pack_options">
+        <item>@string/pref_art_pack_label_sunshine</item>
+        <item>@string/pref_art_pack_label_cute_dogs</item>
+    </string-array>
+    <!-- Value in SharedPreferences for cute dogs art pack  option [CHAR LIMIT=NONE] -->
+    <string name="pref_art_pack_cute_dogs" translatable="false">https://raw.githubusercontent.com/udacity/Sunshine-Version-2/sunshine_master/app/src/main/res/drawable-mdpi/art_%s.png</string>
+
+    <!-- Format for retrieving art from an external source [CHAR LIMIT=NONE] -->
+    <string-array name="pref_art_pack_values">
+        <item>@string/pref_art_pack_sunshine</item>
+        <item>@string/pref_art_pack_cute_dogs</item>
+    </string-array>
+    <string name="pref_units_metric">metric</string>
+    <string name="pref_units_imperial">imperial</string>
+    <!-- Date label when displaying today's weather forecast [CHAR LIMIT=20] -->
+    <string name="today">Today</string>
+
+    <!-- Date label when displaying tomorrow's weather forecast [CHAR LIMIT=20] -->
+    <string name="tomorrow">Tomorrow</string>
+    <!-- Date format for displaying day of week and date (i.e. Mon Jun 1) [CHAR LIMIT=20] -->
+    <string name="format_full_friendly_date">
+<!-- $ mean how much parametar you should pass :for dyofweek one string-->
+        <xliff:g id="day_of_week">%1$s</xliff:g>
+    </string>
+      <string name="format_full_date">
+          <xliff:g id="day_of_week">%1$s</xliff:g>, <xliff:g id="date">%2$s</xliff:g>
+      </string>
+    <!-- Temperature format [CHAR LIMIT=5] -->
+    <string name="format_temperature"><xliff:g id="temp">%1.0f</xliff:g>\u00B0</string>
+
+<string name="format_humidity">Humidity:<xliff:g id="humidity">%1$s</xliff:g> %%</string>
+<string name="format_windSpeed_mph">Wind_speed:<xliff:g id="windspeed">%1$s</xliff:g> km/h<xliff:g id="direction">%1$s</xliff:g></string>
+<string name="format_windSpeed_kmh">Wind_speed:<xliff:g id="windspeed">%1$s</xliff:g> mp/h <xliff:g id="direction">%1$s</xliff:g></string>
+<string name="format_pressure">Pressure:<xliff:g id="pressure">%1$s</xliff:g> hpd</string>
+    <!-- Wind in mph [CHAR LIMIT=25] -->
+    <string name="format_wind_mph">
+        Wind: <xliff:g id="speed">%1$1.0f</xliff:g> mph <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+
+    <!-- Wind in kph [CHAR LIMIT=25] -->
+    <string name="format_wind_kmh">
+        Wind: <xliff:g id="speed">%1$1.0f</xliff:g> km/h <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+    <!-- Strings related to Notification preference -->
+    <string name="pref_last_sync">last_sync</string>
+<!--may be to example.com for ather applications-->
+    <string name="content_authority">com.example.godaa.sunshine</string>
+    <string name="sync_account_type">sunshine.example.godaa.com</string>
+    <!-- Strings related to Notification preferences -->
+    <string name="pref_last_notification">last_notification</string>
+
+    <!-- Notification Format -->
+    <string name="format_notification">
+        Forecast: <xliff:g id="condition">%1$s</xliff:g> High: <xliff:g id="high">%2$s</xliff:g> Low: <xliff:g id="low">%3$s</xliff:g>
+    </string>
+    <string name="pref_enable_notification_key" translatable="false">enable_notification</string>
+    <string name="pref_enable_notification_label">Weather Notification</string>
+    <string name="pref_enable_notification_true">Enabled</string>
+    <string name="pref_enable_notification_false">Not Enabled</string>
+    <string name="pref_enable_notification_default" translatable="false">true</string>
+    <!-- Key name for art pack unit preference in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_art_pack_key" translatable="false">art_pack</string>
+
+    <!-- Value in SharedPreferences for Sunshine art pack option [CHAR LIMIT=NONE] -->
+    <string name="pref_art_pack_sunshine" translatable="false">https://raw.githubusercontent.com/udacity/Sunshine-Version-2/sunshine_master/app/src/main/res/drawable-xxhdpi/art_%s.png</string>
+
+</resources>

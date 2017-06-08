@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:orderInCategory="100"
+    android:title="Refresh"
+    android:id="@+id/actionrefresdh"
+    app:showAsAction="never"/>
+    <item
+        android:title="map_location"
+        android:id="@+id/map"
+        app:showAsAction="never" />
+</menu>

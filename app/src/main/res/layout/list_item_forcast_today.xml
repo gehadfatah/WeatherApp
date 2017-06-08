@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/sunshine_light_blue"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    >
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"></FrameLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="7"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today, June 23"
+            android:id="@+id/day"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="22sp"
+            android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="81"
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/high_temp"
+                android:textColor="@color/white"
+                android:textSize="72sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18"
+                android:id="@+id/low_temp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-condensed"
+
+                android:textSize="30dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:gravity="center_horizontal"
+        android:paddingLeft="16dp"
+        >
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/art_clear"
+            android:id="@+id/image_view"/>
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:padding="16dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+
+            android:id="@+id/description"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

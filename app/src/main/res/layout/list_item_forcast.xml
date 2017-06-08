@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+    android:background="@drawable/toush_selcto">
+
+<FrameLayout
+    android:layout_width="60dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_view"
+        android:src="@drawable/ic_launcher" />
+</FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tommorrow"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/day" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clear"
+        android:textSize="12sp"
+        android:id="@+id/description"
+        android:fontFamily="sans-serif-condensed"
+
+        />
+
+        </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="5">
+    <TextView
+        android:text="81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/high_temp"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="87"
+                android:id="@+id/low_temp"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+</LinearLayout>

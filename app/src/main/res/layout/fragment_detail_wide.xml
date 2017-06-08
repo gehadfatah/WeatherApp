@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="0dp"
+            android:background="@android:color/darker_gray"/>
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+          >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/day"
+                android:text="Today"
+                android:textStyle="bold"
+
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="24sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/month_day"
+                android:text="June, 24"
+                android:textColor="#FFA09393"
+                android:fontFamily="sans-serif-condensed"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2"
+
+            android:gravity="center_vertical">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21"
+                        android:textSize="140sp"
+                        android:textStyle="bold"
+
+                        android:fontFamily="sans-serif-condensed"
+
+                        android:id="@+id/high_temp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:textSize="70sp"
+                        android:id="@+id/low_temp"
+                        android:textColor="#FFA09393"
+                        android:padding="16dp"
+                        android:fontFamily="sans-serif-condensed"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/humidity"
+                        android:textSize="22sp"
+                          android:padding="4dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+
+                        android:text="Humidity:48%"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/wind_speed"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+
+                        android:padding="4dp"
+                        android:fontFamily="sans-serif-condensed"
+
+                        android:text="Wind:6 km/h NW"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pressure"
+                        android:textSize="22sp"
+                        android:padding="4dp"
+                        android:textStyle="bold"
+
+                        android:fontFamily="sans-serif-condensed"
+
+                        android:text="Pressure:1041"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="144dp"
+                        android:layout_height="144dp"
+                        android:src="@drawable/ic_launcher"
+                        android:id="@+id/image_view"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22dp"
+                        android:text="Clear"
+                        android:padding="16dp"
+                        android:textStyle="bold"
+
+                        android:fontFamily="sans-serif-condensed"
+                        android:id="@+id/description"/>
+                </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
