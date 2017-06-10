@@ -6,13 +6,17 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+
+import com.example.godaa.sunshine.databinding.ActivityDetailNewBinding;
+
 /**
  * Created by godaa on 02/03/2017.
  */
 //call only in mpanetwo =false
 public class  DetailActivity extends ActionBarActivity {
     public static final String DATE_KEY = "date";
-
+    //activity_detail_new
+ActivityDetailNewBinding activityDetailBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

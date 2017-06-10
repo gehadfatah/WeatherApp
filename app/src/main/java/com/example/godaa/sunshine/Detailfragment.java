@@ -10,6 +10,7 @@ import android.support.v4.app.LoaderManager;
 import android.support.v4.app.ShareCompat;
 import android.support.v4.content.CursorLoader;
 
+
 import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.database.Cursor;
@@ -118,6 +119,7 @@ public class Detailfragment extends Fragment implements LoaderManager.LoaderCall
     public void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
+
     }
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
@@ -150,6 +152,8 @@ public class Detailfragment extends Fragment implements LoaderManager.LoaderCall
 
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState) {
+      //  FragmentDe
+
         View rootView = inflater.inflate(R.layout.fragment_detail, container, false);
         mLocation = Utility.getPreferredLocation(getActivity());
         Bundle arguments = getArguments();
